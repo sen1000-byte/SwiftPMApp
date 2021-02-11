@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		33C0A1D825D49FAC0006DEB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C0A1D625D49FAC0006DEB8 /* Main.storyboard */; };
 		33C0A1DA25D49FAF0006DEB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C0A1D925D49FAF0006DEB8 /* Assets.xcassets */; };
 		33C0A1DD25D49FAF0006DEB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C0A1DB25D49FAF0006DEB8 /* LaunchScreen.storyboard */; };
+		33C0A1E725D4D28C0006DEB8 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 33C0A1E625D4D28C0006DEB8 /* PKHUD */; };
+		33C0A1EA25D4D37D0006DEB8 /* マイドキュメント (31).PNG in Resources */ = {isa = PBXBuildFile; fileRef = 33C0A1E925D4D37D0006DEB8 /* マイドキュメント (31).PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		33C0A1D925D49FAF0006DEB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33C0A1DC25D49FAF0006DEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33C0A1DE25D49FAF0006DEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C0A1E925D4D37D0006DEB8 /* マイドキュメント (31).PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "マイドキュメント (31).PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C0A1E725D4D28C0006DEB8 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				33C0A1D025D49FAC0006DEB8 /* AppDelegate.swift */,
 				33C0A1D225D49FAC0006DEB8 /* SceneDelegate.swift */,
 				33C0A1D425D49FAC0006DEB8 /* ViewController.swift */,
+				33C0A1E925D4D37D0006DEB8 /* マイドキュメント (31).PNG */,
 				33C0A1D625D49FAC0006DEB8 /* Main.storyboard */,
 				33C0A1D925D49FAF0006DEB8 /* Assets.xcassets */,
 				33C0A1DB25D49FAF0006DEB8 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				33C0A1E625D4D28C0006DEB8 /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = 33C0A1CD25D49FAC0006DEB8 /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 33C0A1C425D49FAC0006DEB8;
+			packageReferences = (
+				33C0A1E525D4D28C0006DEB8 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 33C0A1CE25D49FAC0006DEB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 				33C0A1DD25D49FAF0006DEB8 /* LaunchScreen.storyboard in Resources */,
 				33C0A1DA25D49FAF0006DEB8 /* Assets.xcassets in Resources */,
 				33C0A1D825D49FAC0006DEB8 /* Main.storyboard in Resources */,
+				33C0A1EA25D4D37D0006DEB8 /* マイドキュメント (31).PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33C0A1E525D4D28C0006DEB8 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33C0A1E625D4D28C0006DEB8 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33C0A1E525D4D28C0006DEB8 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33C0A1C525D49FAC0006DEB8 /* Project object */;
 }
